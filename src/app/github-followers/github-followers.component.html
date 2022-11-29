@@ -1,0 +1,10 @@
+<div class="container">
+    <div *ngFor="let follower of followers">
+        <div class="card p-3 my-3">
+            <h4 class="media-heading">
+                <a [routerLink]="['/followers', follower.id, follower.login]">{{follower.login}}</a>
+            </h4>
+            <a href="{{follower.html_url}}">{{follower.html_url}}</a>
+        </div>
+    </div>
+</div>
